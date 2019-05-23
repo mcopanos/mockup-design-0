@@ -1,0 +1,52 @@
+header .wrapper {
+  max-width: 90%;
+  margin: 0 auto;
+  padding: 50px;
+}
+
+.nav-bar ul {
+  display: flex;
+  height: 96px;
+  align-items: center;
+  justify-content: flex-end;
+}
+
+.nav-bar li {
+  list-style-type: none;
+  padding: 2px 15px;
+  font-size: 1.2em;
+    a {
+      text-decoration: none;
+    }
+}
+
+.logo a {
+  font-family: 'Josefin Slab', serif;
+  color: $primary-color;
+
+  font-size: 1.25em;
+}
+
+.hamburger-menu span {
+  display: block;
+  height: 7px;
+  width: 50px;
+  background-color: $primary-color;
+  margin: 3px 0;
+  border-radius: 5px;
+}
+
+ul .who-we-are {
+  flex: 3;
+  border-left: 2px solid $secondary-color;
+  height: 30px;
+  padding-top: 15px;
+    a {
+      color: #7E7D7D;
+    }
+}
+
+.contact-page a {
+  color: #648AF7;
+  font-weight: 500;
+}
