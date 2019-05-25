@@ -1,14 +1,10 @@
-header .wrapper {
-  max-width: 90%;
-  margin: 0 auto;
-  padding: 50px;
-}
-
 .nav-bar ul {
+  width: 70vw;
+  margin: 0 auto;
   display: flex;
   height: 96px;
   align-items: center;
-  justify-content: flex-end;
+
 }
 
 .nav-bar li {
@@ -42,7 +38,7 @@ ul .who-we-are {
   height: 30px;
   padding-top: 15px;
     a {
-      color: #7E7D7D;
+      color: $secondary-color;
     }
 }
 
