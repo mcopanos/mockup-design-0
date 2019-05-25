@@ -7,7 +7,7 @@ function NavBar() {
             <nav className="nav-bar">
                 <ul>
                     <li className="logo">
-                        <a href="#"><h1>Mostly Serious</h1></a>
+                        <a href="#"><h1>Logo Here</h1></a>
                     </li>
                     <li className="who-we-are">
                         <a href='#'>Who We Are</a>
