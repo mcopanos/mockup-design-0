@@ -1,0 +1,22 @@
+.about-us {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.about-content {
+  text-align: center;
+  margin: 0 auto;
+  width: 50vw;
+  padding: 75px 15px;
+}
+.about-content h2 {
+  font-size: 2em;
+  font-weight: bold;
+}
+.about-content p {
+  font-weight: 100;
+  font-size: 1.1em;
+}
+
+/*# sourceMappingURL=secondary-hero.css.map */
