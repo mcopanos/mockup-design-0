@@ -6,7 +6,7 @@ function NavBar() {
             <nav className="nav-bar">
                 <ul>
                     <li className="logo">
-                        <a href="#"><h1>Logo Here</h1></a>
+                        <a href="#"><img src="https://www.mostlyserious.io/static/img/logo.svg" alt=""/></a>
                     </li>
                     <li className="who-we-are">
                         <a href='#'>Who We Are</a>
