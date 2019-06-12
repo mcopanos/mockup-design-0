@@ -1,16 +1,15 @@
 .nav-bar ul {
-  width: 90vw;
+  width: 92.5vw;
   margin: 0 auto;
   display: flex;
   height: 100px;
   align-items: center;
-
 }
 
 .nav-bar li {
   list-style-type: none;
-  padding: 8px 15px;
-  font-size: 18px;
+  padding: 7px 15px;
+  font-size: 20px;
     a {
       text-decoration: none;
     }
@@ -20,6 +19,7 @@
   font-family: 'Josefin Slab', serif;
   color: $primary-color;
   font-size: 1.25em;
+  padding-right: 10px;
 }
 
 .hamburger-menu span {
@@ -35,21 +35,26 @@ ul .who-we-are {
   flex: 3;
   border-left: 2px solid $secondary-color;
   height: 30px;
-    a {
-      color: $secondary-color;
-      font-family: $b-text;
-      height: 24px;
-      width: 98px;
+  a {
+    color: $secondary-color;
+    font-family: $b-text;
+    font-weight: 500;
+    height: 24px;
+    width: 98px;
+    padding-left: 10px;
     }
 }
 
 .contact-page a {
-  color: #648AF7;
-  font-weight: bold;
-  font-family: $b-text;
-  height: 24px;
-  width: 100px;
-  font-size: 18px;
-  line-height: 25px;
-  letter-spacing: normal;
+    color: #648AF7;
+    font-weight: bold;
+    font-family: $b-text;
+    height: 24px;
+    width: 100px;
+    line-height: 24px;
+    letter-spacing: normal;
+}
+
+.nav-bar li a:hover {
+  color: $primary-color;
 }
