@@ -114,21 +114,36 @@ ul .who-we-are a {
   display: flex;
   flex-direction: column;
   align-items: center;
+  width: 90vw;
+  margin: 0 auto;
+  box-sizing: border-box;
+}
+.about-us .hero-img {
+  display: inline-block;
+  max-width: 100%;
+  border-radius: 3px;
+  object-fit: contain;
+  height: auto;
 }
 
 .about-content {
   text-align: center;
   margin: 0 auto;
-  width: 50vw;
-  padding: 75px 15px;
+  width: 35vw;
+  padding: 100px 15px 50px 15px;
 }
 .about-content h2 {
-  font-size: 2em;
+  font-size: 38px;
   font-weight: bold;
+  color: #293446;
+  height: 48px;
 }
 .about-content p {
   font-weight: 100;
-  font-size: 1.1em;
+  font-size: 16px;
+  color: #212121;
+  line-height: 28px;
+  margin: 0 0 24px;
 }
 
 .expert-content {
