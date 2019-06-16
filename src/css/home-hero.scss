@@ -1,6 +1,7 @@
 .hero-container {
   width: 100vw;
   height: 984px;
+  position: relative;
   background-image: url("https://www.mostlyserious.io/uploads/team/_fullWidth/full-service-digital-agency-3.jpg");
   background-position: center; /* Center the image */
   background-repeat: no-repeat; /* Do not repeat the image */
@@ -33,15 +34,14 @@
 .content {
   position: absolute;
   width: 50vw;
-  top: 65%;
   z-index: 1;
   left: 45px;
+  bottom: 35px;
   h2 {
     font-weight: bold;
     color: #fff;
     font-size: 52px;
     font-family: 'Brandon Text', sans-serif;
-    height: 124px;
     line-height: 62px;
   }
 }
