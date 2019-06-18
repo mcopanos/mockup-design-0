@@ -1,7 +1,84 @@
 import React from 'react';
 
 class ExpertTeam extends React.Component {
+    state = {
+        team: [
+            {
+                id: 0,
+                name: 'Jarad Johnson',
+                title: 'President',
+                image: 'https://www.mostlyserious.io/uploads/team/_tile/digital-solutions-jarad.jpg'
+            },
+            {
+                id: 1,
+                name: 'Lucy Howell',
+                title: 'Director of Client Strategy',
+                image: 'https://www.mostlyserious.io/uploads/team/_tile/digital-solutions-lucy-2.jpg'
+            },
+            {
+                id: 2,
+                name: 'Spencer Harris',
+                title: 'Director of Operations',
+                image: 'https://www.mostlyserious.io/uploads/team/_tile/digital-solutions-spencer.jpg'
+            },
+            {
+                id: 3,
+                name: 'Chelsea Begley',
+                title: 'Account Manger',
+                image: 'https://www.mostlyserious.io/uploads/team/_tile/digital-solutions-chelsea.jpg'
+            },
+            {
+                id: 4,
+                name: 'Jessica Spencer',
+                title: 'Director of Design',
+                image: 'https://www.mostlyserious.io/uploads/team/_tile/digital-solutions-jess.jpg'
+            },
+            {
+                id: 5,
+                name: 'Molly Riddle-Nunn',
+                title: 'Director of Content Strategy',
+                image: 'https://www.mostlyserious.io/uploads/team/_tile/digital-solutions-molly.jpg'
+            },
+            {
+                id: 6,
+                name: 'Maranda Provance',
+                title: 'Director of Engineering',
+                image: 'https://www.mostlyserious.io/uploads/team/_tile/digital-solutions-maranda.jpg'
+            },
+            {
+                id: 7,
+                name: 'Aimee Hendrycks',
+                title: 'Senior Engineer',
+                image: 'https://www.mostlyserious.io/uploads/team/_tile/digital-solutions-aimee.jpg'
+            },
+            {
+                id: 8,
+                name: 'Jessica Gottstein',
+                title: 'Designer',
+                image: 'https://www.mostlyserious.io/uploads/team/_tile/digital-solutions-jt.jpg'
+            },
+            {
+                id: 9,
+                name: 'Becca Godsey',
+                title: 'Marketing Analyst',
+                image: 'https://www.mostlyserious.io/uploads/team/_tile/digital-solutions-becca.jpg'
+            },
+            {
+                id: 10,
+                name: 'Levi Zitting',
+                title: 'Engineer',
+                image: 'https://www.mostlyserious.io/uploads/team/_tile/digital-solutions-levi.jpg'
+            },
+            {
+                id: 11,
+                name: 'Joe Camden',
+                title: 'Video and Motion Producer',
+                image: 'https://www.mostlyserious.io/uploads/blog/_tile/MOS_Joe-Camden-Who-We-Are.jpg'
+            }
+        ]
+    };
     render() {
+        let state = this.state;
         return(
             <section>
                 <div className="expert-content">
@@ -21,93 +98,29 @@ class ExpertTeam extends React.Component {
                     </p>
                 </div>
                 <div className="image-container">
+                    {
+                        state.team.map( person => (
+                            <div key={person.id} className="box">
+                                <div className="img-wrapper">
+                                    <img className="random-img" src={person.image} alt="head shot of team member"/>
+                                </div>
+                                <div className="img-content">
+                                    <h2>{person.name}</h2>
+                                    <p>{person.title}</p>
+                                </div>
+                            </div>
+                        ))
+                    }
                     <div className="box">
-                        <img className="random-img" src="https://www.mostlyserious.io/uploads/team/_tile/digital-solutions-jarad.jpg" alt=""/>
-                        <div className="img-content">
-                            <h2>Jarad Johnson</h2>
-                            <p>President</p>
-                        </div>
-                    </div>
-                    <div className="box">
-                        <img className="random-img" src="https://www.mostlyserious.io/uploads/team/_tile/digital-solutions-lucy-2.jpg" alt=""/>
-                        <div className="img-content">
-                            <h2>Lucy Howell</h2>
-                            <p>Director of Client Strategy</p>
-                        </div>
-                    </div>
-                    <div className="box">
-                        <img className="random-img" src="https://www.mostlyserious.io/uploads/team/_tile/digital-solutions-spencer.jpg" alt=""/>
-                        <div className="img-content">
-                            <h2>Spencer Harris</h2>
-                            <p>director of Operations</p>
-                        </div>
-                    </div>
-                    <div className="box">
-                        <img className="random-img" src="https://www.mostlyserious.io/uploads/team/_tile/digital-solutions-chelsea.jpg" alt=""/>
-                        <div className="img-content">
-                            <h2>Chelsea Begley</h2>
-                            <p>Account Manger</p>
-                        </div>
-                    </div>
-                    <div className="box">
-                        <img className="random-img" src="https://www.mostlyserious.io/uploads/team/_tile/digital-solutions-jess.jpg" alt=""/>
-                        <div className="img-content">
-                            <h2>Jessica Spencer</h2>
-                            <p>Director of Design</p>
-                        </div>
-                    </div>
-                    <div className="box">
-                        <img className="random-img" src="https://www.mostlyserious.io/uploads/team/_tile/digital-solutions-molly.jpg" alt=""/>
-                        <div className="img-content">
-                            <h2>Molly Riddle-Nunn</h2>
-                            <p>Director of Content Strategy</p>
-                        </div>
-                    </div>
-                    <div className="box">
-                        <img className="random-img" src="https://www.mostlyserious.io/uploads/team/_tile/digital-solutions-maranda.jpg" alt=""/>
-                        <div className="img-content">
-                            <h2>Maranda Provance</h2>
-                            <p>Director of Engineering</p>
-                        </div>
-                    </div>
-                    <div className="box">
-                        <img className="random-img" src="https://www.mostlyserious.io/uploads/team/_tile/digital-solutions-aimee.jpg" alt=""/>
-                        <div className="img-content">
-                            <h2>Aimee Hendrycks</h2>
-                            <p>Senior Engineer </p>
-                        </div>
-                    </div>
-                    <div className="box">
-                        <img className="random-img" src="https://www.mostlyserious.io/uploads/team/_tile/digital-solutions-jt.jpg" alt=""/>
-                        <div className="img-content">
-                            <h2>Jessica Gottstein</h2>
-                            <p>Designer</p>
-                        </div>
-                    </div>
-                    <div className="box">
-                        <img className="random-img" src="https://www.mostlyserious.io/uploads/team/_tile/digital-solutions-becca.jpg" alt=""/>
-                        <div className="img-content">
-                            <h2>Becca Godsey</h2>
-                            <p>Marketing Analyst</p>
-                        </div>
-                    </div>
-                    <div className="box">
-                        <img className="random-img" src="https://www.mostlyserious.io/uploads/team/_tile/digital-solutions-levi.jpg" alt=""/>
-                        <div className="img-content">
-                            <h2>Levi Zitting</h2>
-                            <p>Engineer</p>
-                        </div>
-                    </div>
-                    <div className="box">
-                        <img className="random-img" src="https://www.mostlyserious.io/uploads/blog/_tile/MOS_Joe-Camden-Who-We-Are.jpg" alt=""/>
-                        <div className="img-content">
-                            <h2>Joe Camden</h2>
-                            <p>Video and Motion Producer</p>
-                        </div>
-                    </div>
-                    <div className="box">
-                        <img className="random-img" src="https://picsum.photos/400?random=13" alt=""/>
-                        <div className="img-content">
+                        <div className="img-wrapper">
+                            <div className="img-content">
+                                <h2>Interested in joining our team?</h2>
+                                <p>
+                                    We're always looking for another unicorn tha loves to create great
+                                    products for our clients and isn't afraid to ask "Why?". If this
+                                    is you, we'd love to talk.
+                                </p>
+                            </div>
                         </div>
                     </div>
                 </div>

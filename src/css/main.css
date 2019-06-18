@@ -114,7 +114,7 @@ ul .who-we-are a {
   display: flex;
   flex-direction: column;
   align-items: center;
-  width: 90vw;
+  width: calc(80% - 10px);
   margin: 0 auto;
   box-sizing: border-box;
 }
@@ -166,19 +166,20 @@ ul .who-we-are a {
 }
 
 .image-container {
-  width: 70vw;
+  width: calc(100% - 10px);
   margin: 0 auto;
   display: flex;
   flex-wrap: wrap;
-  justify-content: space-between;
+  justify-content: center;
 }
 
 .box {
-  width: calc(50% - 15px);
+  width: 640px;
+  height: 400px;
   position: relative;
 }
 .box .random-img {
-  width: 100%;
+  width: calc(100% - 20px);
   display: block;
   border-radius: 1%;
   object-fit: contain;
@@ -188,11 +189,25 @@ ul .who-we-are a {
   display: flex;
   flex-direction: column;
   align-items: center;
-  align-content: flex-end;
   color: white;
-  font-size: 1.25em;
-  bottom: 15px;
-  width: 100%;
+  bottom: 85px;
+  width: 95%;
+  z-index: 1;
+}
+.box h2 {
+  font-size: 38px;
+  padding: 15px 0;
+}
+
+.img-wrapper:before {
+  background-image: -webkit-gradient(linear, left top, left bottom, from(transparent), to(#364458));
+  height: 100%;
+  left: 0;
+  position: absolute;
+  bottom: 10px;
+  width: calc(100% - 20px);
+  border-radius: 1%;
+  content: "";
 }
 
 * {
