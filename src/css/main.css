@@ -165,38 +165,87 @@ ul .who-we-are a {
   line-height: 24px;
 }
 
-.image-container {
-  width: calc(100% - 10px);
+.team-cards-wrapper {
+  width: calc(100% - 40px);
+  max-width: 1315px;
   margin: 0 auto;
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: center;
 }
 
-.box {
-  width: 640px;
-  height: 400px;
-  position: relative;
+.team-cards {
+  display: flex;
+  flex-wrap: wrap;
+  margin: 0 -20px 0 -20px;
 }
-.box .random-img {
-  width: calc(100% - 20px);
+
+.team-card-wrapper {
+  box-sizing: border-box;
+  width: 50%;
+  padding: 0 20px 20px;
+  margin-bottom: 20px;
+}
+@media (max-width: 959px) {
+  .team-card-wrapper {
+    width: 100%;
+  }
+}
+
+.team-card {
+  position: relative;
+  box-shadow: 0 20px 30px 0 rgba(95, 118, 151, 0.23);
+  overflow: hidden;
+  transition: all 0.1s linear;
+}
+.team-card .img-wrapper {
+  background-size: cover;
+  background-position: center;
+  transition: all 0.1s linear;
+}
+.team-card .profile-img {
+  width: 100%;
   display: block;
   border-radius: 1%;
   object-fit: contain;
 }
-.box .img-content {
+.team-card .img-content {
   position: absolute;
   display: flex;
   flex-direction: column;
   align-items: center;
   color: white;
-  bottom: 85px;
-  width: 95%;
+  bottom: 60px;
+  width: 98%;
   z-index: 1;
 }
-.box h2 {
+@media (max-width: 767px) {
+  .team-card .img-content .img-content {
+    bottom: 20px;
+  }
+  .team-card .img-content h2 {
+    padding: 5px 0;
+  }
+}
+.team-card h2 {
   font-size: 38px;
   padding: 15px 0;
+}
+
+.team-card:hover,
+.team-card:focus,
+.team-card:hover .img-wrapper,
+.team-card:focus .img-wrapper {
+  transform: scale(1.03);
+  border-radius: 1%;
+}
+
+.team-card-join {
+  background: linear-gradient(219.27deg, #F45D1F 0%, #ED4967 100%), linear-gradient(180deg, rgba(157, 78, 73, 0) 0%, #364458 100%);
+  color: white;
+  min-height: 400px;
+  display: flex;
+  text-align: center;
+  align-items: center;
+  padding: 15px;
+  border-radius: 2%;
 }
 
 .img-wrapper:before {
@@ -204,10 +253,13 @@ ul .who-we-are a {
   height: 100%;
   left: 0;
   position: absolute;
-  bottom: 10px;
-  width: calc(100% - 20px);
+  width: 100%;
   border-radius: 1%;
   content: "";
+}
+
+.box-wrapper:before {
+  background: linear-gradient(219.27deg, #F45D1F 0%, #ED4967 100%), linear-gradient(180deg, rgba(157, 78, 73, 0) 0%, #364458 100%);
 }
 
 * {
