@@ -1,0 +1,35 @@
+.core-values {
+  text-align: center;
+  padding: 0;
+  width: 90vw;
+  margin: 0 auto;
+  max-width: 775px;
+
+  .core-values-content {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+
+    h2 {
+      height: 48px;
+      width: 798px;
+      color: #293446;
+      font-size: 38px;
+      line-height: 48px;
+      margin-bottom: 57px;
+    }
+  }
+
+  .core-values-line {
+    background-color: #b7b7b7;
+    box-sizing: border-box;
+    height: 4px;
+    width: 100%;
+    margin: 145px 0 125px;
+    border: 3px solid #b7b7b7;
+    border-radius: 2px;
+  }
+
+}
