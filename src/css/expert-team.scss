@@ -85,14 +85,17 @@
     padding: 15px 0;
   }
 }
-.team-card:hover,
-.team-card:focus,
-.team-card:hover .img-wrapper,
-.team-card:focus .img-wrapper {
-  transform: scale(1.03);
-  border-radius: 1%;
-}
 
+.team-card {
+  &:hover,
+  &:focus {
+    &,
+    .img-wrapper {
+      transform: scale(1.03);
+      border-radius: 1%;
+    }
+  }
+}
 .team-card-join {
   background: linear-gradient(219.27deg, #F45D1F 0%, #ED4967 100%),
   linear-gradient(180deg, rgba(157, 78, 73, 0) 0%, #364458 100%);
