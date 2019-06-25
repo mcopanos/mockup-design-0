@@ -1,5 +1,4 @@
 import React from 'react';
-import BoardMeeting from '../photos/board-meeting.jpg';
 
 function SecondaryHero() {
     return (
@@ -7,18 +6,16 @@ function SecondaryHero() {
             <div className="about-content">
                 <h2>Around Our Office</h2>
                 <br/>
-                <p>Lorem ipsum dolor sit amet,
-                    consectetur adipiscing elit,
-                    sed do eiusmod tempor incididunt
-                    ut labore et dolore magna aliqua.
-                    Vel facilisis volutpat est velit.
-                    Lectus sit amet est placerat in.
-                    Senectus et netus et malesuada fames
-                    ac turpis egestas integer. Nec feugiat
-                    nisl pretium fusce.
+                <p>
+                    Call us crazy, but we believe being a product of out environment
+                    can be a good thing. At our headquarters in Springfield, MO, our
+                    collaborative spaces flow one into the next. The open airy feel
+                    keep our heads in the game. The natural light gives us our munch
+                    needed daily dose of Vitamin D. And we're so obsessed with writing
+                    on whiteboards that a few of them have gone mobile.
                 </p>
             </div>
-            <img className="hero-img" src={BoardMeeting} alt="people brain storming"/>
+            <img className="hero-img" src="https://www.mostlyserious.io/uploads/_fullWidth/full-service-digital-agency-2.jpg" alt="people brain storming"/>
         </section>
     );
 }

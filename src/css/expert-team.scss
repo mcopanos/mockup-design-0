@@ -1,45 +1,120 @@
 .expert-content {
   text-align: center;
-  margin: 0 auto;
-  width: 50vw;
-  padding: 75px 15px;
+  margin: 40px auto 0;
+  width: calc(100% - 50px);
+  max-width: 750px;
+  padding: 55px 0;
+
   h2 {
-    font-size: 2em;
-    font-weight: bold;
+    font-size: 38px;
+    color: #293446;
+    line-height: 48px;
+    font-weight: 600;
   }
+
   p {
     font-weight: 100;
-    font-size: 1.1em;
+    line-height: 24px;
   }
 }
 
-.image-container {
-  width: 90vw;
+.team-cards-wrapper {
+  width: calc(100% - 40px);
+  max-width: 1315px;
+  margin: 0 auto;
+}
+
+.team-cards {
   display: flex;
   flex-wrap: wrap;
-  justify-content: space-between;
+  margin: 0 -20px 0 -20px;
 }
 
-.box {
-  width: 48.5%;
-  height: 400px;
-  margin-bottom: 2.5%;
-  .random-img {
+.team-card-wrapper {
+  box-sizing: border-box;
+  width: 50%;
+  padding: 0 20px 20px;
+  margin-bottom: 20px;
+
+  @media (max-width: 959px) {
     width: 100%;
-    height: 100%;
-    border-radius: 1%;
-    box-shadow: 3px 3px 5px 6px #ccc;
   }
+}
+
+.team-card {
+  position: relative;
+  box-shadow: 0 20px 30px 0 rgba(95,118,151,0.23);
+  overflow: hidden;
+  transition: all .1s linear;
+
+  .img-wrapper {
+    background-size: cover;
+    background-position: center;
+    transition: all .1s linear;
+  }
+
+  .profile-img {
+    width: 100%;
+    display: block;
+    border-radius: 1%;
+    object-fit: contain;
+  }
+
   .img-content {
-    position: relative;
+    position: absolute;
     display: flex;
     flex-direction: column;
-    margin-bottom: 2%;
     align-items: center;
-    align-content: flex-end;
-    padding: 2em;
     color: white;
-    font-size: 1.25em;
-    bottom: 200px;
+    bottom: 60px;
+    width: 98%;
+    z-index: 1;
+
+    @media (max-width: 767px) {
+      .img-content {
+        bottom: 20px;
+      }
+      h2 {
+        padding: 5px 0;
+      }
+    }
   }
+
+  h2 {
+    font-size: 38px;
+    padding: 15px 0;
+  }
+}
+.team-card:hover,
+.team-card:focus,
+.team-card:hover .img-wrapper,
+.team-card:focus .img-wrapper {
+  transform: scale(1.03);
+  border-radius: 1%;
+}
+
+.team-card-join {
+  background: linear-gradient(219.27deg, #F45D1F 0%, #ED4967 100%),
+  linear-gradient(180deg, rgba(157, 78, 73, 0) 0%, #364458 100%);
+  color: white;
+  min-height: 400px;
+  display: flex;
+  text-align: center;
+  align-items: center;
+  padding: 15px;
+  border-radius: 2%;
+}
+
+.img-wrapper:before {
+  background-image: -webkit-gradient(linear, left top, left bottom, from(transparent), to(#364458));
+  height: 100%;
+  left: 0;
+  position: absolute;
+  width: 100%;
+  border-radius: 1%;
+  content: '';
+}
+
+.box-wrapper:before {
+  background: linear-gradient(219.27deg, #F45D1F 0%, #ED4967 100%), linear-gradient(180deg, rgba(157, 78, 73, 0) 0%, #364458 100%);
 }

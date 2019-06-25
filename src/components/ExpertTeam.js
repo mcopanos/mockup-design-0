@@ -1,105 +1,58 @@
 import React from 'react';
+import team from '../data/team.json';
 
 class ExpertTeam extends React.Component {
+    state = {
+        team,
+    };
     render() {
+        const { team }  = this.state;
         return(
             <section>
                 <div className="expert-content">
-                    <h2>Our Expert Team</h2>
-                    <br/>
-                    <p>Lorem ipsum dolor sit amet,
-                        consectetur adipiscing elit,
-                        sed do eiusmod tempor incididunt
-                        ut labore et dolore magna aliqua.
-                        Vel facilisis volutpat est velit.
-                        Lectus sit amet est placerat in.
-                        Senectus et netus et malesuada fames
-                        ac turpis egestas integer. Nec feugiat
-                        nisl pretium fusce.</p>
+                    <h2>Our Expert Team</h2><br/>
+                    <p>
+                        The Mostly Serious team is the product
+                        of our commitment to finding those who
+                        we affectionately call <em>unicorn people</em>-the
+                        rare folks who wield an expert knowledge of their own
+                        domain and live by our core values of accountability,
+                        integrity, community, devotion, collaboration, and grit.
+                        And sure, maybe they have other random talents, like a
+                        willingness to literally run around the office delivering
+                        high five for every big victory. Overall, though, it's our
+                        collective dedication to doing the right thing in the best
+                        way that makes us a creative force ot be reckoned with.
+                    </p>
                 </div>
-                <div className="image-container">
-                    <div className="box">
-                        <img className="random-img" src="https://picsum.photos/400?random=1" alt=""/>
-                        <div className="img-content">
-                            <h2>Random Photo</h2><br/>
-                            <p>This Pic is dope!</p>
-                        </div>
-                    </div>
-                    <div className="box">
-                        <img className="random-img" src="https://picsum.photos/400?random=2" alt=""/>
-                        <div className="img-content">
-                            <h2>Random Photo</h2><br/>
-                            <p>This Pic is dope!</p>
-                        </div>
-                    </div>
-                    <div className="box">
-                        <img className="random-img" src="https://picsum.photos/400?random=3" alt=""/>
-                        <div className="img-content">
-                            <h2>Random Photo</h2><br/>
-                            <p>This Pic is dope!</p>
-                        </div>
-                    </div>
-                    <div className="box">
-                        <img className="random-img" src="https://picsum.photos/400?random=4" alt=""/>
-                        <div className="img-content">
-                            <h2>Random Photo</h2><br/>
-                            <p>This Pic is dope!</p>
-                        </div>
-                    </div>
-                    <div className="box">
-                        <img className="random-img" src="https://picsum.photos/400?random=5" alt=""/>
-                        <div className="img-content">
-                            <h2>Random Photo</h2><br/>
-                            <p>This Pic is dope!</p>
-                        </div>
-                    </div>
-                    <div className="box">
-                        <img className="random-img" src="https://picsum.photos/400?random=6" alt=""/>
-                        <div className="img-content">
-                            <h2>Random Photo</h2><br/>
-                            <p>This Pic is dope!</p>
-                        </div>
-                    </div>
-                    <div className="box">
-                        <img className="random-img" src="https://picsum.photos/400?random=7" alt=""/>
-                        <div className="img-content">
-                            <h2>Random Photo</h2><br/>
-                            <p>This Pic is dope!</p>
-                        </div>
-                    </div>
-                    <div className="box">
-                        <img className="random-img" src="https://picsum.photos/400?random=8" alt=""/>
-                        <div className="img-content">
-                            <h2>Random Photo</h2><br/>
-                            <p>This Pic is dope!</p>
-                        </div>
-                    </div>
-                    <div className="box">
-                        <img className="random-img" src="https://picsum.photos/400?random=9" alt=""/>
-                        <div className="img-content">
-                            <h2>Random Photo</h2><br/>
-                            <p>This Pic is dope!</p>
-                        </div>
-                    </div>
-                    <div className="box">
-                        <img className="random-img" src="https://picsum.photos/400?random=10" alt=""/>
-                        <div className="img-content">
-                            <h2>Random Photo</h2><br/>
-                            <p>This Pic is dope!</p>
-                        </div>
-                    </div>
-                    <div className="box">
-                        <img className="random-img" src="https://picsum.photos/400?random=11" alt=""/>
-                        <div className="img-content">
-                            <h2>Random Photo</h2><br/>
-                            <p>This Pic is dope!</p>
-                        </div>
-                    </div>
-                    <div className="box">
-                        <img className="random-img" src="https://picsum.photos/400?random=12" alt=""/>
-                        <div className="img-content">
-                            <h2>Random Photo</h2><br/>
-                            <p>This Pic is dope!</p>
+                <div className="team-cards-wrapper">
+                    <div className="team-cards">
+                        {
+                            team.map(person => (
+                                <div key={person.id} className="team-card-wrapper">
+                                    <div className="team-card">
+                                        <div className="img-wrapper">
+                                            <img className="profile-img" src={person.image} alt={`${person.name} profile`} />
+                                        </div>
+                                        <div className="img-content">
+                                            <h2>{person.name}</h2>
+                                            <p>{person.title}</p>
+                                        </div>
+                                    </div>
+                                </div>
+                            ))
+                        }
+                        <div className="team-card-wrapper">
+                            <div className="team-card team-card-join">
+                                <div className="team-card-join-content">
+                                    <h2>Interested in joining our team?</h2>
+                                    <p>
+                                        We're always looking for another unicorn tha loves to create great
+                                        products for our clients and isn't afraid to ask "Why?". If this
+                                        is you, we'd love to talk.
+                                    </p>
+                                </div>
+                            </div>
                         </div>
                     </div>
                 </div>
@@ -107,4 +60,5 @@ class ExpertTeam extends React.Component {
         );
     }
 }
+
 export default ExpertTeam;
