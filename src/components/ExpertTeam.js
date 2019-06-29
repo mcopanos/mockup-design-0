@@ -43,14 +43,16 @@ class ExpertTeam extends React.Component {
                             ))
                         }
                         <div className="team-card-wrapper">
-                            <div className="team-card team-card-join">
-                                <div className="team-card-join-content">
-                                    <h2>Interested in joining our team?</h2>
-                                    <p>
-                                        We're always looking for another unicorn tha loves to create great
-                                        products for our clients and isn't afraid to ask "Why?". If this
-                                        is you, we'd love to talk.
-                                    </p>
+                            <div className="team-card-join-wrapper">
+                                <div className="team-card team-card-join">
+                                    <div className="team-card-join-content">
+                                        <h2>Interested in joining our team?</h2>
+                                        <p>
+                                            We're always looking for another unicorn tha loves to create great
+                                            products for our clients and isn't afraid to ask "Why?". If this
+                                            is you, we'd love to talk.
+                                        </p>
+                                    </div>
                                 </div>
                             </div>
                         </div>

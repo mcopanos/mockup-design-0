@@ -3,36 +3,42 @@
     "id": 0,
     "image": "https://www.mostlyserious.io/uploads/work/_icon/collaboration.png",
     "heading": "Collaboration",
-    "paragraph": "We reach new heights by forging bonds with people who want to grow. Together."
+    "paragraph": "We reach new heights by forging bonds with people who want to grow. Together.",
+    "color": "orange"
   },
   {
     "id": 1,
     "image": "https://www.mostlyserious.io/uploads/work/_icon/integrity.png",
     "heading": "Integrity",
-    "paragraph": "We listen, research, think, tell truths. Then, we build the right solutions."
+    "paragraph": "We listen, research, think, tell truths. Then, we build the right solutions.",
+    "color": "gray"
   },
   {
     "id": 2,
     "image": "https://www.mostlyserious.io/uploads/work/_icon/community.png",
     "heading": "Community",
-    "paragraph": "We welcome our responsibility to make the world a little better."
+    "paragraph": "We welcome our responsibility to make the world a little better.",
+    "color": "skyblue"
   },
   {
     "id": 3,
     "image": "https://www.mostlyserious.io/uploads/work/_icon/devotion.png",
     "heading": "Devotion",
-    "paragraph": "We show the collective dedication it takes to get shit done—the right way."
+    "paragraph": "We show the collective dedication it takes to get shit done—the right way.",
+    "color": "pink"
   },
   {
     "id": 4,
     "image": "https://www.mostlyserious.io/uploads/work/_icon/accountability.png",
     "heading": "Accountability",
-    "paragraph": "We support one another by embracing accountability in all that we do."
+    "paragraph": "We support one another by embracing accountability in all that we do.",
+    "color": "yellow"
   },
   {
     "id": 5,
     "image": "https://www.mostlyserious.io/uploads/work/_icon/grit.png",
     "heading": "Grit",
-    "paragraph": "Our strength of character pushes us to excel in the face of every adversity."
+    "paragraph": "Our strength of character pushes us to excel in the face of every adversity.",
+    "color": "darkblue"
   }
 ]

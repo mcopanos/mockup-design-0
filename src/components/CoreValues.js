@@ -8,9 +8,9 @@ class CoreValues extends React.Component {
     render() {
         const { values } = this.state;
         return (
-            <section className="core-values">
-                <div className="core-values-content">
-                    <hr className="core-values-line"/>
+            <section className="tile-set">
+                <div className="centered-content">
+                    <hr />
                     <h2>Our Core Values</h2>
                     <p>
                         Our core values are essentially our own
@@ -23,20 +23,29 @@ class CoreValues extends React.Component {
                         something-why not six things?
                     </p>
                 </div>
-                {
-                    values.map(value => (
-                        <div key={value.id} className="values-grid">
-                            <div className="grid-item">
-                                <img src={value.image} alt={`core value ${value.heading}`}/>
-                                <h2>{value.heading}</h2>
-                                <div className="hidden-paragraph">{value.paragraph}</div>
-                            </div>
-                        </div>
-                    ))
-                }
+                <div className="tile-set__container">
+                    <div className="tile-set__tiles">
+                        {
+                            values.map(value => (
+                                <div key={value.id} className={`tile tile--${value.color}`}>
+                                    <div className="tile__wrapper">
+                                        <div className="tile__main">
+                                            <div className="tile__content">
+                                                <img className="tile__img" src={value.image} alt={`core value ${value.heading}`}/>
+                                                <h2 className="tile__heading">{value.heading}</h2>
+                                                <p className="tile__text">{value.paragraph}</p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            ))
+                        }
+                    </div>
+                </div>
             </section>
         );
     }
 }
+
 
 export default CoreValues;
