@@ -3,9 +3,9 @@ import React from 'react';
 function SecondaryHero() {
     return (
         <section className="about-us">
-            <div className="about-content">
+            <div className="centered-content">
                 <h2>Around Our Office</h2>
-                <br/>
+                {/*<br/>*/}
                 <p>
                     Call us crazy, but we believe being a product of out environment
                     can be a good thing. At our headquarters in Springfield, MO, our

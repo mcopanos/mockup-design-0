@@ -47,5 +47,4 @@ class CoreValues extends React.Component {
     }
 }
 
-
 export default CoreValues;
