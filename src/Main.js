@@ -3,7 +3,8 @@ import NavBar from './components/NavBar';
 import HomeHero from './components/HomeHero';
 import SecondaryHero from './components/SecondaryHero';
 import ExpertTeam from './components/ExpertTeam';
-import CoreValues from "./components/CoreValues";
+import CoreValues from './components/CoreValues';
+import BlogLinks from './components/BlogLinks';
 
 class Main extends React.Component {
     render() {
@@ -14,6 +15,7 @@ class Main extends React.Component {
                 <SecondaryHero/>
                 <ExpertTeam/>
                 <CoreValues/>
+                <BlogLinks/>
             </div>
         );
     }
