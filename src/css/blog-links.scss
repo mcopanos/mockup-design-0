@@ -2,16 +2,21 @@
   background-color: #F3F7FD;
 
   &__flex-container {
+    display: flex;
+    width: calc(100% - 20px);
     max-width: 1315px;
-    width: calc(100% - 40px);
     margin: 0 auto;
+    border: 2px dotted hotpink;
 
-    &__blog-posts {
-      display: flex;
-      flex-wrap: wrap;
-      padding-left: -20;
-      padding-right: -20px;
-    }
+
+    //&__blog-posts{
+    //  display: flex;
+    //  width: 90%;
+    //  padding-left: -20;
+    //  padding-right: -20px;
+    //  border: 2px solid pink;
+    //  background-color: #E92D52;
+    //}
   }
 }
 
@@ -26,7 +31,7 @@
 
   &__image {
     object-fit: contain;
-
+    width: 100%;
   }
 }
 
