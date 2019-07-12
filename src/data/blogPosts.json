@@ -1,5 +1,6 @@
 [
   {
+    "id": 0,
     "image": "https://www.mostlyserious.io/uploads/blog/_card/Web-Developer-Position-at-Mostly-Serious.jpg",
     "title": "We're Looking for a Web Developer!",
     "body": "<p>Are you a self-starter looking to make a big splash in a small company? Do you want to level up your programming skills by collaborating with world-class designers? If so, we'd love to talk.</p>",
@@ -9,6 +10,7 @@
     }
   },
   {
+    "id": 1,
     "image": "https://www.mostlyserious.io/uploads/blog/_card/mostly-serious-small-business-of-the-year-2019.jpg",
     "title": "Mostly Serious is the 2019 Small Business of the Year Winner",
     "body": "<p>Mostly Serious had the honor of being selected as the winner of the 2019 Small Business Award.</p>",
@@ -18,6 +20,7 @@
     }
   },
   {
+    "id": 2,
     "image": "https://www.mostlyserious.io/uploads/_card/MOS_Account-Manager-Hire-2019.jpg",
     "title": "We're Looking for an Account Manager!",
     "body": "<p>We are searching for the next member to join our team. Are you someone who loves managing projects, dreaming up effective strategies, and building long-lasting relationships? If so, we'd love to talk.</p>",
