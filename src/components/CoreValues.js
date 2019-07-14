@@ -23,7 +23,7 @@ class CoreValues extends React.Component {
                         something-why not six things?
                     </p>
                 </div>
-                <div className="tile-set__container">
+                <div className="container">
                     <div className="tile-set__tiles">
                         {
                             values.map(value => (

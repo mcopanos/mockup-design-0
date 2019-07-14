@@ -11,17 +11,19 @@ const BlogLinks = () => (
                 {
                     blogData.map(blogPost => (
                         <div key={blogPost.id} className="article-card">
-                            <div className="article-card__image-wrapper">
-                                <img className="article-card__image" src={blogPost.image} alt=""/>
-                            </div>
-                            <h5>{blogPost.title}</h5>
-                            <div dangerouslySetInnerHTML={{__html: blogPost.body}}/>
-                            <div>
-                                <div className="article-card__image">
-                                    <img src={blogPost.author.image} alt=""/>
+                            <div className="article-card__wrapper">
+                                <div className="article-card__image-wrapper">
+                                    <img className="article-card__image" src={blogPost.image} alt="blog post"/>
                                 </div>
-                                <div className="cite-author">
-                                    <p>{blogPost.author.name}</p>
+                                <div className="article-card__content-wrapper">
+                                    <h5 className="article-card__header">{blogPost.title}</h5>
+                                    <div className="article-card__statement" dangerouslySetInnerHTML={{__html: blogPost.body}}/>
+                                    <div className="article-card__author-image">
+                                        <img src={blogPost.author.image} alt="Author"/>
+                                    </div>
+                                    <div className="cite-author">
+                                        <p>{blogPost.author.name}</p>
+                                    </div>
                                 </div>
                             </div>
                         </div>
