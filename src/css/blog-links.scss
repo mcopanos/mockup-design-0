@@ -1,29 +1,48 @@
 .blog-set {
   background-color: #F3F7FD;
-  margin-bottom: -100px;
 
+  &__container {
+    width: calc(100% - 40px);
+    max-width: 1315px;
+    margin: 0 auto;
+  }
   &__blog-posts{
     display: flex;
     padding-left: -20;
     padding-right: -20px;
-    align-items: stretch;
+
+    @media(max-width: 959px) {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: space-around;
+    }
   }
 }
 
 .article-card {
+  $self: &;
   width: percentage(1/3);
+  //height: 525px;
   margin-left: 0;
   margin-right: 0;
   padding: 0 10px;
-  box-sizing: border-box;
 
+  @media(max-width: 959px) {
+   width: calc(50% - 20px);
+    margin: 0 auto;
+  }
+
+  @media(max-width: 768px) {
+    width: percentage(1/1);
+    padding-bottom: 100px;
+  }
 
   &__wrapper {
     background: #fff;
     display: block;
     text-align: left;
     border-radius: 3px;
-    padding-bottom: 30px;
+    min-height: 552px;
     box-shadow: $box-shadow;
     transition: all .1s linear;
     overflow: hidden;
