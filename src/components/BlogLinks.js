@@ -6,7 +6,7 @@ const BlogLinks = () => (
         <div className="centered-content">
             <h2>What We've Been Writing</h2>
         </div>
-        <div className="container">
+        <div className="blog-set__container">
             <div className="blog-set__blog-posts">
                 {
                     blogData.map(blogPost => (
