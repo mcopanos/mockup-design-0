@@ -19,7 +19,7 @@
     padding: 0 20px;
     width: 50%;
     margin: 0 auto;
-    border: 1px solid;
+    //border: 1px solid;
 
     label {
       margin: 0 0 24px;
@@ -47,13 +47,14 @@
     textarea {
       display: block;
       height: 44px;
-      max-height: 44px;
       width: 100%;
+      font-size: 16px;
+      line-height: 24px;
       border: 1px solid #B7B7B7;
       border-radius: 5px;
-      background: #fff;
       margin: 5px 0 0;
       box-shadow: 0 5px 0 rgba(183,183,183,.2);
+      transition: height 200ms ease-in-out;
     }
   }
 
@@ -82,5 +83,17 @@
       color: #fff;
     }
   }
-
 }
+
+input:focus {
+  outline: none;
+  border-bottom: 1px solid #1c8fed;
+  color: $primary-color;
+}
+
+textarea:focus {
+  outline: 1px solid #1c8fed;
+  color: $primary-color;
+  height: 140px;
+}
+

@@ -21,7 +21,7 @@ const ContactSection = () => (
                 </label>
                 <label htmlFor="additional-info">
                     <span>Could you tell us a bit more about your needs?</span>
-                    <textarea name="text"cols="60" rows="1" />
+                    <textarea name="text" cols="10" rows="5" />
                 </label>
             </form>
             <button className="contact-form__button">
