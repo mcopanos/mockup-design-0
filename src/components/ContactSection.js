@@ -1,4 +1,7 @@
 import React from 'react';
+// import { FaBeer } from 'react-icons/fa';
+// import { faHome } from "@fortawesome/free-solid-svg-icons";
+// import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 
 const ContactSection = () => (
     <section className="contact-form">
@@ -27,6 +30,13 @@ const ContactSection = () => (
             <button className="contact-form__button">
                 <span>Send</span>
             </button>
+        </div>
+        <div className="contact-form__company-info">
+            <div className="contact-form__form-wrapper">
+                <h3>417.501.6552</h3>
+                <h3>info@mostlyserious.io</h3>
+            </div>
+            <p>4064 S. Lone Pine, Springfield, MO 65804</p>
         </div>
     </section>
 );

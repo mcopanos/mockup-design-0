@@ -63,7 +63,7 @@
     width: 100px;
     border-radius: 50%;
     border: 5px solid $primary-color;
-    margin: 15px;
+    margin: 15px 0 150px 0;
     transition: all 200ms ease-in-out;
     span {
       color: $primary-color;
@@ -71,6 +71,45 @@
       font-weight: bold;
       font-size: 18px;
     }
+  }
+
+  &__company-info {
+    background: #F3F7FD;
+    padding: 100px 0;
+
+  }
+
+  &__form-wrapper {
+    max-width: 50%;
+    margin: 0 auto;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    justify-items: center;
+
+    h3:first-child {
+      padding-right: 150px;
+    }
+
+    h3 {
+      height: 38px;
+      width: 164px;
+      color: #4D6285;
+      font-size: 28px;
+      font-weight: 500;
+      line-height: 38px;
+    }
+  }
+
+  p {
+    display: block;
+    height: 24px;
+    width: 50%;
+    margin: 0 auto;
+    color: #4D6285;
+    text-align: center;
+    font-size: 18px;
+    line-height: 24px;
+    padding-top: 70px;
   }
 }
 
