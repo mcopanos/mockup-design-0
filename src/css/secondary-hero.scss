@@ -5,7 +5,8 @@
   width: calc(80% - 10px);
   margin: 0 auto;
   box-sizing: border-box;
-  .hero-img {
+
+  &__hero-img {
     display: inline-block;
     max-width: 100%;
     border-radius: 3px;
@@ -13,24 +14,3 @@
     height: auto;
   }
 }
-
-//.about-content {
-//  text-align: center;
-//  margin: 0 auto;
-//  width: calc(100% - 50px);
-//  max-width: 750px;
-//  padding: 55px 0;
-//  h2 {
-//    font-size: 38px;
-//    font-weight: bold;
-//    color: #293446;
-//    height: 48px;
-//  }
-//  p {
-//    font-weight: 100;
-//    font-size: 16px;
-//    color: #212121;
-//    line-height: 28px;
-//    margin: 0 0 24px;
-//  }
-//}

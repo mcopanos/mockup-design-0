@@ -7,6 +7,7 @@ $darkblue: #364458;
 
 .tile-set {
   padding-bottom: 100px;
+
   &__container {
     width: calc(100% - 40px);
     max-width: 1315px;
@@ -18,21 +19,6 @@ $darkblue: #364458;
     flex-wrap: wrap;
     padding-left: -20;
     padding-right: -20px;
-  }
-}
-
-.tile__wrapper {
-  &:hover,
-  &:focus {
-    &,
-    .tile__main {
-      .tile__img {
-        transform: translateY(-20px);
-      }
-      .tile__text {
-        visibility: visible;
-      }
-    }
   }
 }
 
@@ -57,7 +43,6 @@ $darkblue: #364458;
 
   @media(max-width: 768px) {
     width: percentage(1/1);
-
   }
 
   &__wrapper {
@@ -65,10 +50,20 @@ $darkblue: #364458;
     position: relative;
     padding-top: 105%;
     margin: 20px 0;
+
+    &:hover,
+    &:focus {
+      #{$self}__img {
+        transform: translateY(-20px);
+      }
+      #{$self}__text {
+        opacity: 1;
+      }
+    }
   }
 
   &__main {
-    box-shadow: 0 20px 30px 0 rgba(95,118,151,0.23);
+    box-shadow: $box-shadow;
     position: absolute;
     top: 0;
     right: 0;
@@ -88,6 +83,7 @@ $darkblue: #364458;
 
   &__img {
     height: 70px;
+    transition: transform .1s linear;
   }
   &__heading {
     font-size: 38px;
@@ -95,9 +91,10 @@ $darkblue: #364458;
 
   &__text {
     padding: 15px 0;
-    visibility: hidden;
+    opacity: 0;
+    transition: opacity .1s linear;
     @media(max-width: 768px) {
-      visibility: visible;
+      opacity: 1;
       padding: 15px 55px;
     }
   }

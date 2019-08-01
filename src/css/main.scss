@@ -6,6 +6,9 @@
 @import 'tile-set.scss';
 @import 'centered-content.scss';
 @import 'blog-links.scss';
+@import 'reuseable-container-class';
+@import 'contact-section';
+@import 'footer.scss';
 
 * {
     padding: 0;
@@ -16,6 +19,6 @@ body {
     font-family: 'Droid Serif', sans-serif;
 }
 
-h2 {
+h2, h5{
     font-family: "Brandon Text", Helvetica,  sans-serif;
 }

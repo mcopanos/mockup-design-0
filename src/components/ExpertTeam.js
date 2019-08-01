@@ -25,7 +25,7 @@ class ExpertTeam extends React.Component {
                         way that makes us a creative force ot be reckoned with.
                     </p>
                 </div>
-                <div className="team-cards-wrapper">
+                <div className="container">
                     <div className="team-cards">
                         {
                             team.map(person => (
