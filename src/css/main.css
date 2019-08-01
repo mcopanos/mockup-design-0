@@ -403,19 +403,24 @@ ul .who-we-are a {
   background-color: #F3F7FD;
 }
 .blog-set__flex-container {
-  display: flex;
-  width: calc(100% - 20px);
+  width: calc(100% - 40px);
   max-width: 1315px;
   margin: 0 auto;
   border: 2px dotted hotpink;
 }
-.blog-set__flex-container__blog-posts {
+.blog-set__blog-posts {
   display: flex;
+  padding-left: -20;
+  padding-right: -20px;
   border: 2px solid pink;
 }
 
 .article-card {
   width: 33.3333333333%;
+  box-sizing: border-box;
+  text-align: center;
+  margin-left: 0;
+  margin-right: 0;
   border: 1px solid;
 }
 .article-card__image {
