@@ -6,6 +6,7 @@ import ExpertTeam from './components/ExpertTeam';
 import CoreValues from './components/CoreValues';
 import BlogLinks from './components/BlogLinks';
 import ContactSection from './components/ContactSection';
+import Footer from './components/Footer'
 
 class Main extends React.Component {
     render() {
@@ -18,6 +19,7 @@ class Main extends React.Component {
                 <CoreValues/>
                 <BlogLinks/>
                 <ContactSection/>
+                <Footer/>
             </div>
         );
     }

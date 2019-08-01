@@ -97,6 +97,11 @@
       font-size: 28px;
       font-weight: 500;
       line-height: 38px;
+      display: flex;
+
+      span {
+        padding: 0 20px;
+      }
     }
   }
 

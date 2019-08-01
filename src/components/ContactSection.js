@@ -33,8 +33,8 @@ const ContactSection = () => (
         </div>
         <div className="contact-form__company-info">
             <div className="contact-form__form-wrapper">
-                <h3>417.501.6552</h3>
-                <h3>info@mostlyserious.io</h3>
+                <h3><i className="fas fa-phone"></i><span>417.501.6552</span></h3>
+                <h3><i className="fas fa-envelope-open"></i><span>info@mostlyserious.io</span></h3>
             </div>
             <p>4064 S. Lone Pine, Springfield, MO 65804</p>
         </div>
