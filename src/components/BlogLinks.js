@@ -16,8 +16,10 @@ const BlogLinks = () => (
                                     <img className="article-card__image" src={blogPost.image} alt="blog post"/>
                                 </div>
                                 <div className="article-card__content-wrapper">
-                                    <h5 className="article-card__header">{blogPost.title}</h5>
-                                    <div className="article-card__statement" dangerouslySetInnerHTML={{__html: blogPost.body}}/>
+                                    <div>
+                                        <h5 className="article-card__header">{blogPost.title}</h5>
+                                        <div className="article-card__statement" dangerouslySetInnerHTML={{__html: blogPost.body}}/>
+                                    </div>
                                     <div className="article-card__author-wrapper">
                                         <img className="article-card__author-image" src={blogPost.author.image} alt="Author"/>
                                         <p className="cite-author">{blogPost.author.name}</p>
