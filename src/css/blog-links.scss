@@ -10,8 +10,6 @@
 
   &__blog-posts{
     display: flex;
-    padding-left: -20px;
-    padding-right: -20px;
 
     @media(max-width: 959px) {
     display: flex;

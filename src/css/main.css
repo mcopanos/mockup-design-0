@@ -59,52 +59,74 @@ ul .who-we-are a {
   color: #F45D1F;
 }
 
-.hero-container {
+.home-hero {
   width: 100vw;
-  height: 984px;
+  height: 60vh;
+  min-height: 600px;
   position: relative;
   background-image: url("https://www.mostlyserious.io/uploads/team/_fullWidth/full-service-digital-agency-3.jpg");
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
 }
+@media (max-width: 767px) {
+  .home-hero {
+    height: auto;
+    min-height: 350px;
+    position: relative;
+  }
+}
+.home-hero .home-hero__text {
+  position: absolute;
+  width: 75%;
+  z-index: 1;
+  left: 5%;
+  bottom: 7%;
+}
+.home-hero .home-hero__text h2 {
+  font-weight: bold;
+  color: #fff;
+  font-size: 52px;
+  font-family: "Brandon Text", sans-serif;
+  line-height: 62px;
+}
+@media (max-width: 959px) {
+  .home-hero .home-hero__text {
+    width: 90%;
+  }
+}
+@media (max-width: 767px) {
+  .home-hero .home-hero__text {
+    width: 90%;
+  }
+  .home-hero .home-hero__text h2 {
+    font-size: 28px;
+    line-height: 38px;
+  }
+}
 
-.hero-container:before {
+.home-hero::before {
   background-image: -webkit-gradient(linear, left top, left bottom, from(transparent), to(#364458));
-  height: 984px;
+  height: 100%;
   display: block;
   position: absolute;
   width: 100%;
 }
 
-.hero-container:after {
+.home-hero::after {
   clip-path: polygon(0 0, 0 100%, 100% 0);
   background-color: #F45D1F;
   width: 40%;
   height: 100%;
   display: block;
   left: 0;
-  top: 0;
-  position: relative;
-}
-
-.hero-container::after, .hero-container::before {
-  content: "";
-}
-
-.content {
+  top: -1;
   position: absolute;
-  width: 50vw;
-  z-index: 1;
-  left: 45px;
-  bottom: 35px;
 }
-.content h2 {
-  font-weight: bold;
-  color: #fff;
-  font-size: 52px;
-  font-family: "Brandon Text", sans-serif;
-  line-height: 62px;
+
+.home-hero::after,
+.home-hero::before {
+  content: "";
 }
 
 .about-us {
@@ -380,8 +402,6 @@ ul .who-we-are a {
 }
 .blog-set__blog-posts {
   display: flex;
-  padding-left: -20;
-  padding-right: -20px;
 }
 @media (max-width: 959px) {
   .blog-set__blog-posts {
@@ -393,6 +413,7 @@ ul .who-we-are a {
 .article-card {
   width: 33.3333333333%;
   box-sizing: border-box;
+  min-height: 552px;
   margin-left: 0;
   margin-right: 0;
   padding: 0 10px;
@@ -412,10 +433,11 @@ ul .who-we-are a {
 }
 .article-card__wrapper {
   background: #fff;
-  display: block;
+  display: flex;
+  flex-direction: column;
   text-align: left;
   border-radius: 3px;
-  min-height: 552px;
+  height: 100%;
   box-shadow: 0 20px 30px 0 rgba(95, 118, 151, 0.23);
   transition: all 0.15s linear;
   overflow: hidden;
@@ -427,6 +449,10 @@ ul .who-we-are a {
 }
 .article-card__content-wrapper {
   padding: 30px;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
 }
 .article-card__header {
   font-size: 22px;
