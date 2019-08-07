@@ -13,7 +13,9 @@ const SecondaryHero = () => (
                 on whiteboards that a few of them have gone mobile.
             </p>
         </div>
-        <img className="about-us__hero-img" src="https://www.mostlyserious.io/uploads/_fullWidth/full-service-digital-agency-2.jpg" alt="people brain storming"/>
+        <div className="image-wrapper">
+            <img className="image-wrapper__hero-img" src="https://www.mostlyserious.io/uploads/_fullWidth/full-service-digital-agency-2.jpg" alt="people brain storming"/>
+        </div>
     </section>
 );
 

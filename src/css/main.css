@@ -147,16 +147,24 @@
   display: flex;
   flex-direction: column;
   align-items: center;
-  width: calc(80% - 10px);
   margin: 0 auto;
   box-sizing: border-box;
 }
-.about-us__hero-img {
+
+.image-wrapper {
+  width: calc(80% - 10px);
+}
+.image-wrapper__hero-img {
   display: inline-block;
   max-width: 100%;
   border-radius: 3px;
   object-fit: contain;
   height: auto;
+}
+@media (max-width: 767px) {
+  .image-wrapper {
+    width: calc(100% - 50px);
+  }
 }
 
 .team-cards {
