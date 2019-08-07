@@ -694,7 +694,7 @@ footer {
 }
 .footer-wrapper .ga-certified {
   box-sizing: border-box;
-  padding: 10px;
+  padding: 20px;
   align-self: center;
   flex: 2;
 }
@@ -708,7 +708,7 @@ footer {
 }
 .footer-wrapper .social-links__wrapper li {
   position: relative;
-  padding: 10px 15px;
+  padding: 20px 15px;
   margin: 0 10px;
 }
 .footer-wrapper .social-links__wrapper li i.fab {
