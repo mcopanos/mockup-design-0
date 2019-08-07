@@ -525,19 +525,60 @@
   flex-direction: column;
   align-items: center;
 }
+@media (max-width: 767px) {
+  .contact-form__container {
+    width: 90%;
+    max-width: none;
+  }
+}
 .contact-form__wrapper {
   padding: 10px;
   width: 100%;
   margin: 0 auto;
-  border: 1px solid;
 }
-.contact-form__wrapper label {
+.contact-form__inputs {
+  display: flex;
+  justify-items: baseline;
+  padding: 15px 0;
+}
+@media (max-width: 767px) {
+  .contact-form__inputs {
+    display: flex;
+    flex-direction: column;
+  }
+  .contact-form__inputs label {
+    padding-bottom: 12px;
+  }
+  .contact-form__inputs input {
+    padding-left: 10px;
+  }
+}
+.contact-form__inputs label {
   font-size: 18px;
   height: 25px;
+  font-family: "Droid Serif", sans-serif;
+  color: #525252;
+  line-height: 25px;
+  padding-right: 10px;
+}
+.contact-form__inputs input {
+  flex: 2;
+  border: none;
+  border-bottom: 1px solid #B7B7B7;
+  overflow: hidden;
+  font-size: 16px;
+}
+.contact-form__inputs-other {
+  padding-top: 15px;
+}
+.contact-form__inputs-other label {
+  font-size: 18px;
+  height: 25px;
+  font-family: "Droid Serif", sans-serif;
   color: #525252;
   line-height: 25px;
 }
-.contact-form__wrapper textarea {
+.contact-form__inputs-other textarea {
   height: 44px;
   width: 100%;
   font-size: 16px;
@@ -548,23 +589,6 @@
   box-shadow: 0 5px 0 rgba(183, 183, 183, 0.2);
   transition: height 200ms ease-in-out;
   resize: none;
-}
-.contact-form__inputs {
-  display: flex;
-  justify-items: baseline;
-}
-.contact-form__inputs input {
-  flex: 2;
-  border: none;
-  border-bottom: 1px solid #B7B7B7;
-  overflow: hidden;
-  font-size: 16px;
-}
-.contact-form__inputs label {
-  font-size: 18px;
-  height: 25px;
-  color: #525252;
-  line-height: 25px;
 }
 .contact-form__button {
   height: 100px;
@@ -579,6 +603,7 @@
   text-transform: uppercase;
   font-weight: bold;
   font-size: 18px;
+  font-family: "Brandon Text", sans-serif;
 }
 .contact-form__company-info {
   background: #F3F7FD;
@@ -716,6 +741,10 @@ body {
 
 h2, h5 {
   font-family: "Brandon Text", Helvetica, sans-serif;
+}
+
+p {
+  font-family: "Droid Serif", sans-serif;
 }
 
 /*# sourceMappingURL=main.css.map */

@@ -19,9 +19,10 @@ const ContactSection = () => (
                     <label htmlFor="email">How can we reach you?</label>
                     <input type="text" placeholder="Your Email"/>
                 </div>
-
-                <label htmlFor="additional-info">Could you tell us a bit more about your needs?</label>
-                <textarea name="text" cols="10" rows="5" />
+                <div className="contact-form__inputs-other">
+                    <label htmlFor="additional-info">Could you tell us a bit more about your needs?</label>
+                    <textarea name="text" cols="10" rows="5" />
+                </div>
             </form>
             <button className="contact-form__button">
                 <span>Send</span>

@@ -5,33 +5,68 @@
 
   &__container {
     width: 90vw;
-    //border: 1px solid;
     max-width: 494px;
     margin: 0 auto;
     display: flex;
     flex-direction: column;
     align-items: center;
+
+    @media(max-width: 767px) {
+      width: 90%;
+      max-width: none;
+    }
   }
 
   &__wrapper {
-    //display: flex;
-    //flex-direction: column;
-    //align-content: flex-start;
     padding: 10px;
     width: 100%;
     margin: 0 auto;
-    border: 1px solid;
+  }
+
+  &__inputs {
+    display: flex;
+    justify-items: baseline;
+    padding: 15px 0;
+    @media(max-width: 767px) {
+      display: flex;
+      flex-direction: column;
+
+      label {
+        padding-bottom: 12px;
+      }
+
+      input {
+        padding-left: 10px;
+      }
+    }
 
     label {
-      //margin: 0 0 24px;
-      //border: 1px solid;
-      //display: inline-block;
       font-size: 18px;
       height: 25px;
-      //width: 50%;
+      font-family: 'Droid Serif', sans-serif;
       color: #525252;
       line-height: 25px;
-      //padding-right: 5px;
+      padding-right: 10px;
+    }
+
+    input {
+      flex: 2;
+      border: none;
+      border-bottom: 1px solid #B7B7B7;
+      overflow: hidden;
+      font-size: 16px;
+    }
+  }
+
+  &__inputs-other {
+    padding-top: 15px;
+
+    label {
+      font-size: 18px;
+      height: 25px;
+      font-family: 'Droid Serif', sans-serif;
+      color: #525252;
+      line-height: 25px;
     }
 
     textarea {
@@ -42,41 +77,10 @@
       border: 1px solid #B7B7B7;
       border-radius: 5px;
       margin: 5px 0 0;
-      box-shadow: 0 5px 0 rgba(183,183,183,.2);
+      box-shadow: 0 5px 0 rgba(183, 183, 183, .2);
       transition: height 200ms ease-in-out;
       resize: none;
     }
-  }
-
-  &__inputs {
-    display: flex;
-    justify-items: baseline;
-    //border: 1px solid goldenrod;
-
-    input {
-      flex: 2;
-      //box-sizing: border-box;
-      border: none;
-      //width: 100%;
-      border-bottom: 1px solid #B7B7B7;
-      //padding-left: 10px;
-      overflow: hidden;
-      font-size: 16px;
-      //line-height: 24px;
-    }
-
-    label {
-      //margin: 0 0 24px;
-      //border: 1px solid;
-      //display: inline-block;
-      font-size: 18px;
-      height: 25px;
-      //width: 50%;
-      color: #525252;
-      line-height: 25px;
-      //padding-right: 5px;
-    }
-
   }
 
   &__button {
@@ -86,18 +90,19 @@
     border: 5px solid $primary-color;
     margin: 15px 0 150px 0;
     transition: all 200ms ease-in-out;
+
     span {
       color: $primary-color;
       text-transform: uppercase;
       font-weight: bold;
       font-size: 18px;
+      font-family: "Brandon Text", sans-serif;
     }
   }
 
   &__company-info {
     background: #F3F7FD;
     padding: 100px 0;
-
   }
 
   &__form-wrapper {
@@ -144,6 +149,7 @@
   &:focus {
     background: linear-gradient(45deg,#F45D1F 0,#ED4966 100%);
     transform: rotate(45deg);
+
     span {
       color: #fff;
     }
