@@ -5,38 +5,26 @@
   height: 100px;
   align-items: center;
 }
-
-.nav-bar li {
+.nav-bar ul li {
   list-style-type: none;
   padding: 7px 15px;
   font-size: 20px;
 }
-.nav-bar li a {
+.nav-bar ul li a {
   text-decoration: none;
 }
-
-.logo a {
+.nav-bar ul .logo a {
   font-family: "Josefin Slab", serif;
   color: #F45D1F;
   font-size: 1.25em;
   padding-right: 10px;
 }
-
-.hamburger-menu span {
-  display: block;
-  height: 7px;
-  width: 50px;
-  background-color: #F45D1F;
-  margin: 3px 0;
-  border-radius: 5px;
-}
-
-ul .who-we-are {
+.nav-bar ul .who-we-are {
   flex: 3;
   border-left: 2px solid #A8A8A8;
   height: 30px;
 }
-ul .who-we-are a {
+.nav-bar ul .who-we-are a {
   color: #A8A8A8;
   font-family: "Brandon Text";
   font-weight: 500;
@@ -44,8 +32,12 @@ ul .who-we-are a {
   width: 98px;
   padding-left: 10px;
 }
-
-.contact-page a {
+@media (max-width: 767px) {
+  .nav-bar ul .who-we-are {
+    visibility: hidden;
+  }
+}
+.nav-bar ul .contact-page a {
   color: #648AF7;
   font-weight: bold;
   font-family: "Brandon Text";
@@ -53,6 +45,28 @@ ul .who-we-are a {
   width: 100px;
   line-height: 24px;
   letter-spacing: normal;
+}
+@media (max-width: 767px) {
+  .nav-bar ul .contact-page a {
+    display: none;
+  }
+}
+.nav-bar ul .contact-page i {
+  display: none;
+}
+@media (max-width: 767px) {
+  .nav-bar ul .contact-page i {
+    display: block;
+    color: #648AF7;
+  }
+}
+.nav-bar ul .hamburger-menu span {
+  display: block;
+  height: 7px;
+  width: 50px;
+  background-color: #F45D1F;
+  margin: 3px 0;
+  border-radius: 5px;
 }
 
 .nav-bar li a:hover {

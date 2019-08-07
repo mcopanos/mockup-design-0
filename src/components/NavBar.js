@@ -2,7 +2,7 @@ import React from 'react';
 
 function NavBar() {
     return (
-        <header className="wrapper">
+        <header>
             <nav className="nav-bar">
                 <ul>
                     <li className="logo">
@@ -13,6 +13,7 @@ function NavBar() {
                     </li>
                     <li className="contact-page">
                         <a href='#'>Get in Touch</a>
+                        <i className="fas fa-envelope-open"></i>
                     </li>
                     <li className="hamburger">
                         <div className="hamburger-menu">

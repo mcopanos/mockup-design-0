@@ -4,55 +4,71 @@
   display: flex;
   height: 100px;
   align-items: center;
-}
 
-.nav-bar li {
-  list-style-type: none;
-  padding: 7px 15px;
-  font-size: 20px;
+  li {
+    list-style-type: none;
+    padding: 7px 15px;
+    font-size: 20px;
     a {
       text-decoration: none;
     }
-}
+  }
 
-.logo a {
-  font-family: 'Josefin Slab', serif;
-  color: $primary-color;
-  font-size: 1.25em;
-  padding-right: 10px;
-}
+  .logo a {
+    font-family: 'Josefin Slab', serif;
+    color: $primary-color;
+    font-size: 1.25em;
+    padding-right: 10px;
+  }
 
-.hamburger-menu span {
-  display: block;
-  height: 7px;
-  width: 50px;
-  background-color: $primary-color;
-  margin: 3px 0;
-  border-radius: 5px;
-}
-
-ul .who-we-are {
-  flex: 3;
-  border-left: 2px solid $secondary-color;
-  height: 30px;
-  a {
-    color: $secondary-color;
-    font-family: $b-text;
-    font-weight: 500;
-    height: 24px;
-    width: 98px;
-    padding-left: 10px;
+  .who-we-are {
+    flex: 3;
+    border-left: 2px solid $secondary-color;
+    height: 30px;
+    a {
+      color: $secondary-color;
+      font-family: $b-text;
+      font-weight: 500;
+      height: 24px;
+      width: 98px;
+      padding-left: 10px;
     }
-}
+    @media(max-width: 767px) {
+      visibility: hidden;
+    }
+  }
 
-.contact-page a {
-    color: #648AF7;
-    font-weight: bold;
-    font-family: $b-text;
-    height: 24px;
-    width: 100px;
-    line-height: 24px;
-    letter-spacing: normal;
+  .contact-page {
+    a {
+      color: #648AF7;
+      font-weight: bold;
+      font-family: $b-text;
+      height: 24px;
+      width: 100px;
+      line-height: 24px;
+      letter-spacing: normal;
+      @media(max-width: 767px) {
+        display: none;
+      }
+    }
+
+    i {
+      display: none;
+      @media(max-width: 767px) {
+        display: block;
+        color: #648AF7;
+      }
+    }
+  }
+
+  .hamburger-menu span {
+    display: block;
+    height: 7px;
+    width: 50px;
+    background-color: $primary-color;
+    margin: 3px 0;
+    border-radius: 5px;
+  }
 }
 
 .nav-bar li a:hover {
