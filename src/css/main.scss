@@ -9,6 +9,7 @@
 @import 'reuseable-container-class';
 @import 'contact-section';
 @import 'footer.scss';
+@import 'custom-fonts';
 
 * {
     padding: 0;
@@ -16,13 +17,9 @@
 }
 
 body {
-    font-family: 'Droid Serif', sans-serif;
+    font-family: 'droid', sans-serif;
 }
 
 h2, h5{
-    font-family: "Brandon Text", Helvetica,  sans-serif;
-}
-
-p {
-    font-family: "Droid Serif", sans-serif;
+    font-family: 'brandon', Helvetica,  sans-serif;
 }

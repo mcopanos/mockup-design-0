@@ -27,11 +27,11 @@
     height: 30px;
     a {
       color: $secondary-color;
-      font-family: $b-text;
       font-weight: 500;
       height: 24px;
       width: 98px;
       padding-left: 10px;
+      font-family: 'brandon', sans-serif;
     }
     @media(max-width: 767px) {
       visibility: hidden;
