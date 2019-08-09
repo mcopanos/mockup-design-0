@@ -153,10 +153,13 @@
 
 .image-wrapper {
   width: calc(80% - 10px);
+  max-width: 1322px;
+  max-height: 706px;
+  margin: 0 auto;
 }
 .image-wrapper__hero-img {
   display: inline-block;
-  max-width: 100%;
+  width: 100%;
   border-radius: 3px;
   object-fit: contain;
   height: auto;
