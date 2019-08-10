@@ -25,7 +25,7 @@ const ContactSection = () => (
                     <textarea name="text" cols="10" rows="5" />
                 </div>
             </form>
-            <button className="contact-form__button">
+            <button type="submit" className="contact-form__button">
                 <span>Send</span>
             </button>
         </div>
