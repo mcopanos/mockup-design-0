@@ -24,10 +24,14 @@ const ContactSection = () => (
                     <label htmlFor="additional-info">Could you tell us a bit more about your needs?</label>
                     <textarea name="text" cols="10" rows="5" />
                 </div>
+                <div className="contact-form__button-wrapper">
+                    <button type="submit" className="contact-form__button">
+                        <span>Send</span>
+                    </button>
+                </div>
+
             </form>
-            <button type="submit" className="contact-form__button">
-                <span>Send</span>
-            </button>
+
         </div>
         <div className="contact-form__company-info">
             <div className="contact-form__form-wrapper">
