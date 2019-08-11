@@ -6,7 +6,7 @@ const ContactSection = () => (
             <h2>Let's get to work.</h2>
         </div>
         <div className="contact-form__container">
-            <form name="contact" className="contact-form__wrapper" action="post">
+            <form name="contact" className="contact-form__wrapper" method="post">
                 <input type="hidden" name="form-name" value="contact"/>
                 <div className="contact-form__inputs">
                     <label htmlFor="persons-name">What's your name?</label>
