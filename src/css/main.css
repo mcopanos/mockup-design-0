@@ -753,10 +753,12 @@ footer {
 .footer-wrapper h6 {
   color: #364458;
   height: 23px;
-  font-family: "Droid Serif";
+  font-family: "droid", sans-serif;
   font-size: 16px;
   line-height: 23px;
   align-self: center;
+  padding-right: 18px;
+  font-weight: lighter;
 }
 .footer-wrapper h6 a {
   color: #F45D1F;
@@ -768,9 +770,14 @@ footer {
 }
 .footer-wrapper .ga-certified {
   box-sizing: border-box;
-  padding: 20px;
+  padding: 20px 0;
   align-self: center;
   flex: 2;
+}
+@media (max-width: 400px) {
+  .footer-wrapper .ga-certified {
+    padding-top: 50px;
+  }
 }
 .footer-wrapper .social-links {
   align-self: stretch;

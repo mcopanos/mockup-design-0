@@ -16,10 +16,12 @@ footer {
   h6 {
     color: #364458;
     height: 23px;
-    font-family: "Droid Serif";
+    font-family: "droid", sans-serif;
     font-size: 16px;
     line-height: 23px;
     align-self: center;
+    padding-right: 18px;
+    font-weight: lighter;
 
     a {
       color: $primary-color;
@@ -33,9 +35,12 @@ footer {
 
   .ga-certified {
     box-sizing: border-box;
-    padding: 20px;
+    padding: 20px 0;
     align-self: center;
     flex: 2;
+    @media(max-width: 400px) {
+      padding-top: 50px;
+    }
   }
 
   .social-links {

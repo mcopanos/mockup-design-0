@@ -13,7 +13,7 @@ const Footer = () => (
                 </h6>
             </div>
             <div className="ga-certified">
-                <img src="https://www.mostlyserious.io/static/img/ga-certified.png" alt="google analytics certification"/>
+                <img src="/images/ga-certified.png" alt="google analytics certification"/>
             </div>
             <div className="social-links">
                 <ul className="social-links__wrapper">
