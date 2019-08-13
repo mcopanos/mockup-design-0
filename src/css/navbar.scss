@@ -18,12 +18,16 @@
       }
     }
 
-    .logo a {
-      font-family: 'Josefin Slab', serif;
-      color: $primary-color;
-      font-size: 1.25em;
-      padding-right: 10px;
+    .logo {
+
+      a {
+        font-family: 'Josefin Slab', serif;
+        color: $primary-color;
+        //padding-right: 10px;
+
+      }
     }
+
 
     .who-we-are {
       flex: 3;
@@ -75,6 +79,10 @@
         background-color: $primary-color;
         margin: 3px 0;
         border-radius: 5px;
+
+        @media(max-width: 400px) {
+          width: 35px;
+        }
       }
     }
   }

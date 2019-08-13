@@ -1,4 +1,5 @@
 import React from 'react';
+// import Logo from '/Users/michealcopanos/projects/my-projects/mockup-design-0/public/images/logo.svg';
 
 function NavBar() {
     return (
@@ -6,7 +7,9 @@ function NavBar() {
             <nav className="nav-bar">
                 <ul>
                     <li className="logo">
-                        <a href="#"><img src="https://www.mostlyserious.io/static/img/logo.svg" alt=""/></a>
+                        <a href="#">
+                            <img src="" alt=""/>
+                        </a>
                     </li>
                     <li className="who-we-are">
                         <a href='#'>Who We Are</a>

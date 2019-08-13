@@ -19,8 +19,6 @@
 .nav-bar ul .logo a {
   font-family: "Josefin Slab", serif;
   color: #F45D1F;
-  font-size: 1.25em;
-  padding-right: 10px;
 }
 .nav-bar ul .who-we-are {
   flex: 3;
@@ -71,6 +69,11 @@
   margin: 3px 0;
   border-radius: 5px;
 }
+@media (max-width: 400px) {
+  .nav-bar ul .hamburger-menu span {
+    width: 35px;
+  }
+}
 
 .nav-bar li a:hover {
   color: #F45D1F;
@@ -91,6 +94,15 @@
     height: auto;
     min-height: 350px;
     position: relative;
+    width: 100vw;
+    background-size: cover;
+    object-fit: contain;
+  }
+}
+@media (max-width: 400px) {
+  .home-hero {
+    width: 100%;
+    border: 1px solid;
   }
 }
 .home-hero .home-hero__text {
@@ -404,6 +416,12 @@
   width: calc(100% - 50px);
   max-width: 750px;
   padding: 48px 0 25px;
+}
+@media (max-width: 375px) {
+  .centered-content {
+    width: 90%;
+    margin: 0 auto;
+  }
 }
 .centered-content h2 {
   font-size: 38px;

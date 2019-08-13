@@ -14,7 +14,8 @@ const SecondaryHero = () => (
             </p>
         </div>
         <div className="image-wrapper">
-            <img className="image-wrapper__hero-img" src="https://www.mostlyserious.io/uploads/_fullWidth/full-service-digital-agency-2.jpg" alt="people brain storming"/>
+            <img className="image-wrapper__hero-img" src="/images/full-service-digital-agency-2.jpg" alt="people brain storming"/>
+            {/*<img className="image-wrapper__hero-img" src="https://www.mostlyserious.io/uploads/_fullWidth/full-service-digital-agency-2.jpg" alt="people brain storming"/>*/}
         </div>
     </section>
 );

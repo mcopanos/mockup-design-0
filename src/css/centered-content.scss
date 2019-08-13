@@ -5,6 +5,11 @@
   max-width: 750px;
   padding: 48px 0 25px;
 
+  @media(max-width: 375px) {
+    width: 90%;
+    margin: 0 auto;
+  }
+
   h2 {
     font-size: 38px;
     font-weight: bold;

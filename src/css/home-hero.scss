@@ -9,9 +9,17 @@
   background-size: cover;
 
   @media(max-width: 767px) {
-      height: auto;
-      min-height: 350px;
-      position: relative;
+    height: auto;
+    min-height: 350px;
+    position: relative;
+    width: 100vw;
+    background-size: cover;
+    object-fit: contain;
+  }
+
+  @media(max-width: 400px) {
+    width: 100%;
+    border: 1px solid;
   }
 
   .home-hero__text {
