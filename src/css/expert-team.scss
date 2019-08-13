@@ -93,7 +93,14 @@
   align-items: center;
   padding: 0 20px 20px;
   border-radius: 2%;
+
+  h2 {
+    @media(max-width: 400px) {
+      font-size: 32px;
+    }
+  }
 }
+
 
 .img-wrapper:before {
   background-image: -webkit-gradient(linear, left top, left bottom, from(transparent), to(#364458));

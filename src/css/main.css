@@ -6,6 +6,7 @@
   margin: 0 auto;
   display: flex;
   height: 100px;
+  justify-content: space-evenly;
   align-items: center;
 }
 .nav-bar ul li {
@@ -19,6 +20,16 @@
 .nav-bar ul .logo a {
   font-family: "Josefin Slab", serif;
   color: #F45D1F;
+}
+.nav-bar ul .logo a img {
+  height: 35px;
+  width: 210px;
+}
+@media (max-width: 400px) {
+  .nav-bar ul .logo a img {
+    width: 125px;
+    height: 35px;
+  }
 }
 .nav-bar ul .who-we-are {
   flex: 3;
@@ -58,8 +69,15 @@
 @media (max-width: 767px) {
   .nav-bar ul .contact-page i {
     display: block;
+    box-sizing: border-box;
+    padding: 5px;
     color: #648AF7;
+    font-size: 22px;
   }
+}
+.nav-bar ul .hamburger-menu {
+  box-sizing: border-box;
+  padding: 5px;
 }
 .nav-bar ul .hamburger-menu span {
   display: block;
@@ -71,7 +89,8 @@
 }
 @media (max-width: 400px) {
   .nav-bar ul .hamburger-menu span {
-    width: 35px;
+    width: 33px;
+    height: 5px;
   }
 }
 
@@ -102,7 +121,6 @@
 @media (max-width: 400px) {
   .home-hero {
     width: 100%;
-    border: 1px solid;
   }
 }
 .home-hero .home-hero__text {
@@ -271,6 +289,11 @@
   align-items: center;
   padding: 0 20px 20px;
   border-radius: 2%;
+}
+@media (max-width: 400px) {
+  .team-card-join h2 {
+    font-size: 32px;
+  }
 }
 
 .img-wrapper:before {

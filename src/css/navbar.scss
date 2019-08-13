@@ -6,6 +6,7 @@
     margin: 0 auto;
     display: flex;
     height: 100px;
+    justify-content: space-evenly;
     align-items: center;
 
     li {
@@ -23,8 +24,15 @@
       a {
         font-family: 'Josefin Slab', serif;
         color: $primary-color;
-        //padding-right: 10px;
+        img {
+          height: 35px;
+          width: 210px;
 
+          @media(max-width: 400px) {
+            width: 125px;
+            height: 35px;
+          }
+        }
       }
     }
 
@@ -57,6 +65,7 @@
         width: 100px;
         line-height: 24px;
         letter-spacing: normal;
+
         @media(max-width: 767px) {
           display: none;
         }
@@ -66,12 +75,17 @@
         display: none;
         @media(max-width: 767px) {
           display: block;
+          box-sizing: border-box;
+          padding: 5px;
           color: #648AF7;
+          font-size: 22px;
         }
       }
     }
 
     .hamburger-menu {
+      box-sizing: border-box;
+      padding: 5px;
       span {
         display: block;
         height: 7px;
@@ -81,7 +95,8 @@
         border-radius: 5px;
 
         @media(max-width: 400px) {
-          width: 35px;
+          width: 33px;
+          height: 5px;
         }
       }
     }
