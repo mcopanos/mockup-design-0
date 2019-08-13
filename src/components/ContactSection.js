@@ -29,9 +29,7 @@ const ContactSection = () => (
                         <span>Send</span>
                     </button>
                 </div>
-
             </form>
-
         </div>
         <div className="contact-form__company-info">
             <div className="contact-form__form-wrapper">
