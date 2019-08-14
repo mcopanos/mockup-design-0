@@ -38,15 +38,14 @@ footer {
     padding: 20px 0;
     align-self: center;
     flex: 2;
-    @media(max-width: 400px) {
+    @media(max-width: 450px) {
       padding-top: 50px;
     }
   }
 
   .social-links {
     align-self: stretch;
-
-
+    padding-top: 20px;
     &__wrapper {
       list-style: none;
       display: flex;
