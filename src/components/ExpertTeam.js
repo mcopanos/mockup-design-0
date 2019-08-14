@@ -10,7 +10,7 @@ class ExpertTeam extends React.Component {
         return(
             <section>
                 <div className="centered-content">
-                    <h2>Our Expert Team</h2><br/>
+                    <h2>Our Expert Team</h2>
                     <p>
                         The Mostly Serious team is the product
                         of our commitment to finding those who
