@@ -93,6 +93,7 @@
   &__button-wrapper {
     display: flex;
     justify-content: center;
+    align-items: center;
     padding-top: 30px;
   }
 
@@ -133,15 +134,19 @@
     h3 {
       flex: 1;
       height: 38px;
-      color: #4D6285;
       font-size: 28px;
       font-weight: 600;
       line-height: 38px;
       text-align: center;
       padding: 12px 10px;
-      @media(max-width: 400px) {
+      @media(max-width: 450px) {
         font-size: 24px;
         line-height: 32px
+      }
+
+      a {
+        text-decoration: none;
+        color: #4D6285;
       }
 
       span {
