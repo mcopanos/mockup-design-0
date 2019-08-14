@@ -10,7 +10,7 @@ const ContactSection = () => (
                 <input type="hidden" name="form-name" value="contact"/>
                 <div className="contact-form__inputs">
                     <label htmlFor="persons-name">What's your name?</label>
-                    <input type="text" placeholder="Your name"/>
+                    <input type="text" placeholder="Your name" required/>
                 </div>
                 <div className="contact-form__inputs">
                     <label htmlFor="company-name">Where do you work?</label>
@@ -18,7 +18,7 @@ const ContactSection = () => (
                 </div>
                 <div className="contact-form__inputs">
                     <label htmlFor="email">How can we reach you?</label>
-                    <input type="text" placeholder="Your Email"/>
+                    <input type="text" placeholder="Your Email" required/>
                 </div>
                 <div className="contact-form__inputs-other">
                     <label htmlFor="additional-info">Could you tell us a bit more about your needs?</label>
