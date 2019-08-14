@@ -22,9 +22,6 @@ const Footer = () => (
                     <li><i className="fab fa-instagram"></i></li>
                     <li><i className="fab fa-linkedin-in"></i></li>
                 </ul>
-
-
-
             </div>
         </div>
     </footer>

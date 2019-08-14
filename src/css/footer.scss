@@ -45,7 +45,10 @@ footer {
 
   .social-links {
     align-self: stretch;
-    padding-top: 20px;
+    padding: 10px;
+    @media(max-width: 450px) {
+      padding-top: 35px;
+    }
     &__wrapper {
       list-style: none;
       display: flex;
