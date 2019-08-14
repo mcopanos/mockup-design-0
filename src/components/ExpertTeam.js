@@ -9,6 +9,7 @@ class ExpertTeam extends React.Component {
         const { team }  = this.state;
         return(
             <section>
+                <a name="team"></a>
                 <div className="centered-content">
                     <h2>Our Expert Team</h2>
                     <p>

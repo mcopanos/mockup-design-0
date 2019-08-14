@@ -11,10 +11,10 @@ function NavBar() {
                         </a>
                     </li>
                     <li className="who-we-are">
-                        <a href='#'>Who We Are</a>
+                        <a href='#team'>Who We Are</a>
                     </li>
                     <li className="contact-page">
-                        <a href='#'>Get in Touch</a>
+                        <a href='#contact'>Get in Touch</a>
                         <i className="fas fa-envelope-open"></i>
                     </li>
                     <li className="hamburger">

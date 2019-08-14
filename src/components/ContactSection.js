@@ -2,6 +2,7 @@ import React from 'react';
 
 const ContactSection = () => (
     <section className="contact-form">
+        <a name="contact"></a>
         <div className="centered-content">
             <h2>Let's get to work.</h2>
         </div>
