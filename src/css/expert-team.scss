@@ -1,17 +1,20 @@
 .team-cards {
   display: flex;
   flex-wrap: wrap;
-  margin: 0 -20px 0 -20px;
+  //max-width: 1500px;
+  border: 1px solid;
 }
 
 .team-card-wrapper {
   box-sizing: border-box;
+  display: block;
   width: 50%;
+  margin-bottom: 15px;
   padding: 0 20px 20px;
-  margin-bottom: 20px;
 
   @media (max-width: 959px) {
-    width: 100%;
+    width: 90%;
+    margin: 0 auto;
   }
 }
 
