@@ -3,66 +3,77 @@
         "id": 0,
         "name": "Jarad Johnson",
         "title": "President",
-        "image": "/images/digital-solutions-jarad.jpg"
+        "image": "/images/digital-solutions-jarad.jpg",
+        "link": "https://www.mostlyserious.io/who-we-are/jarad-johnson"
     },
     {
         "id": 1,
         "name": "Lucy Howell",
         "title": "Director of Client Strategy",
-        "image": "/images/digital-solutions-lucy-2.jpg"
+        "image": "/images/digital-solutions-lucy-2.jpg",
+        "link":  "https://www.mostlyserious.io/who-we-are/lucy-howell"
     },
     {
         "id": 2,
         "name": "Spencer Harris",
         "title": "Director of Operations",
-        "image": "/images/digital-solutions-spencer.jpg"
+        "image": "/images/digital-solutions-spencer.jpg",
+        "link":  "https://www.mostlyserious.io/who-we-are/spencer-harris"
     },
     {
         "id": 3,
         "name": "Chelsea Begley",
         "title": "Account Manger",
-        "image": "/images/digital-solutions-chelsea.jpg"
+        "image": "/images/digital-solutions-chelsea.jpg",
+        "link":  "https://www.mostlyserious.io/who-we-are/chelsea-begley"
     },
     {
         "id": 4,
         "name": "Jessica Spencer",
         "title": "Director of Design",
-        "image": "/images/digital-solutions-jess.jpg"
+        "image": "/images/digital-solutions-jess.jpg",
+        "link":  "https://www.mostlyserious.io/who-we-are/jessica-spencer"
     },
     {
         "id": 5,
         "name": "Molly Riddle-Nunn",
         "title": "Director of Content Strategy",
-        "image": "/images/digital-solutions-molly.jpg"
+        "image": "/images/digital-solutions-molly.jpg",
+        "link":  "https://www.mostlyserious.io/who-we-are/molly-riddle-nunn"
     },
     {
         "id": 6,
         "name": "Maranda Provance",
         "title": "Director of Engineering",
-        "image": "/images/digital-solutions-maranda.jpg"
+        "image": "/images/digital-solutions-maranda.jpg",
+        "link":  "https://www.mostlyserious.io/who-we-are/maranda-provance"
     },
     {
         "id": 7,
         "name": "Aimee Hendrycks",
         "title": "Senior Engineer",
-        "image": "/images/digital-solutions-aimee.jpg"
+        "image": "/images/digital-solutions-aimee.jpg",
+        "link":  "https://www.mostlyserious.io/who-we-are/aimee-hendrycks"
     },
     {
         "id": 8,
         "name": "Jessica Gottstein",
         "title": "Designer",
-        "image": "/images/digital-solutions-jt.jpg"
+        "image": "/images/digital-solutions-jt.jpg",
+        "link":  "https://www.mostlyserious.io/who-we-are/jessica-gottstein"
     },
     {
         "id": 9,
         "name": "Becca Godsey",
         "title": "Marketing Analyst",
-        "image": "/images/digital-solutions-becca.jpg"
+        "image": "/images/digital-solutions-becca.jpg",
+        "link":  "https://www.mostlyserious.io/who-we-are/becca-godsey"
     },
     {
         "id": 10,
         "name": "Joe Camden",
         "title": "Video and Motion Producer",
-        "image": "/images/MOS_Joe-Camden-Who-We-Are.jpg"
+        "image": "/images/MOS_Joe-Camden-Who-We-Are.jpg",
+        "link":  "https://www.mostlyserious.io/who-we-are/joe-camden"
     }
 ]

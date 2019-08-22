@@ -31,29 +31,33 @@ class ExpertTeam extends React.Component {
                         {
                             team.map(person => (
                                 <div key={person.id} className="team-card-wrapper">
-                                    <div className="team-card">
-                                        <div className="img-wrapper">
-                                            <img className="profile-img" src={person.image} alt={`${person.name} profile`} />
+                                    <a href={person.link}>
+                                        <div className="team-card">
+                                            <div className="img-wrapper">
+                                                <img className="profile-img" src={person.image} alt={`${person.name} profile`} />
+                                            </div>
+                                            <div className="img-content">
+                                                <h2>{person.name}</h2>
+                                                <p>{person.title}</p>
+                                            </div>
                                         </div>
-                                        <div className="img-content">
-                                            <h2>{person.name}</h2>
-                                            <p>{person.title}</p>
-                                        </div>
-                                    </div>
+                                    </a>
                                 </div>
                             ))
                         }
                         <div className="team-card-wrapper">
                             <div className="team-card-join-wrapper">
                                 <div className="team-card team-card-join">
-                                    <div className="team-card-join-content">
-                                        <h2>Interested in joining our team?</h2>
-                                        <p>
-                                            We're always looking for another unicorn tha loves to create great
-                                            products for our clients and isn't afraid to ask "Why?". If this
-                                            is you, we'd love to talk.
-                                        </p>
-                                    </div>
+                                    <a href="https://mostlyserious.io/contact">
+                                        <div className="team-card-join-content">
+                                            <h2>Interested in joining our team?</h2>
+                                            <p>
+                                                We're always looking for another unicorn tha loves to create great
+                                                products for our clients and isn't afraid to ask "Why?". If this
+                                                is you, we'd love to talk.
+                                            </p>
+                                        </div>
+                                    </a>
                                 </div>
                             </div>
                         </div>
