@@ -79,14 +79,14 @@ $darkblue: #364458;
   &__content {
     margin: 0 auto;
     padding: 0 20px;
-  }
 
-  &__img {
-    height: 70px;
-    transition: transform .1s linear;
-  }
-  &__heading {
-    font-size: 38px;
+    &__img {
+      height: 70px;
+      transition: transform .1s linear;
+    }
+    &__heading {
+      font-size: 38px;
+    }
   }
 
   &__text {

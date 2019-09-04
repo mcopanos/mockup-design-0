@@ -3,7 +3,6 @@
   margin-bottom: 100px;
   height: auto;
   @media(max-width: 767px) {
-    background-color: #1c8fed;
   }
 
   &__container {
@@ -14,11 +13,10 @@
 
   &__blog-posts{
     display: flex;
-
     @media(max-width: 959px) {
     display: flex;
     flex-wrap: wrap;
-  }
+    }
   }
 }
 
@@ -35,7 +33,6 @@
   @media(max-width: 959px) {
    width: calc(50% - 5px);
     padding-bottom: 35px;
-    border: 2px solid;
   }
 
   @media(max-width: 768px) {
