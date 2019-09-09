@@ -9,8 +9,8 @@ const BlogLinks = () => (
         <div className="blog-set__container">
             <div className="blog-set__blog-posts">
                 {
-                    blogData.map(blogPost => (
-                        <div key={blogPost.id} className="article-card">
+                    blogData.map((blogPost, index) => (
+                        <div key={index} className="article-card">
                             <div className="article-card__wrapper">
                                 <div className="article-card__image-wrapper">
                                     <img className="article-card__image" src={blogPost.image} alt="blog post"/>
