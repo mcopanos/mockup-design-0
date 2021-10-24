@@ -1,5 +1,5 @@
 This project design was created by the wonderful people at Mostly Serious.
-To get some practice in they let me use some of their older designs the were
+To get some practice in they let me use some of their older designs that were
 not used in production. I myself did not design this project. This was not their 
 exact content, I just use the page layout and added dummy content.
 
